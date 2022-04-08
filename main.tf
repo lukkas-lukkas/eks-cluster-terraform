@@ -31,7 +31,7 @@ terraform {
           nohup busybox httpd -f -p 8080 &
     EOF
     tags = {
-      Name = "Instancia com arquivos"
+      Name = "Nova instancia"
     }
   }
 }
