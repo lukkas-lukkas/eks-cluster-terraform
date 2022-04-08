@@ -1,5 +1,5 @@
-resource "aws_iam_role" "resourseRole" {
-  name = "${var.projectName}-role"
+resource "aws_iam_role" "resourse_role" {
+  name = "${var.project_name}_role"
 
   assume_role_policy = <<POLICY
 {
@@ -17,7 +17,7 @@ resource "aws_iam_role" "resourseRole" {
 POLICY
 }
 
-resource "aws_iam_role_policy_attachment" "resourcePolicy" {
+resource "aws_iam_role_policy_attachment" "resource_policy" {
   policy_arn = "arn:aws:iam::aws:policy/resourcePolicy"
-  role       = aws_iam_role.resourseRole.name
+  role       = aws_iam_role.resourse_role.name
 }
