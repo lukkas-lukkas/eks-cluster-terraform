@@ -15,8 +15,8 @@ resource "aws_iam_role" "resourse_role" {
   })
 }
 
-resource "aws_iam_role_policy_attachment" "resource_policy" {
-  policy_arn = "arn:aws:iam::aws:policy/resource_policy"
+resource "aws_iam_role_policy_attachment" "resource_policy_AmazonEKSClusterPolicy" {
+  policy_arn = "arn:aws:iam::aws:policy/AmazonEKSClusterPolicy"
   role       = aws_iam_role.resourse_role.name
   depends_on = [
     aws_iam_role.resourse_role
