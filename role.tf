@@ -19,6 +19,6 @@ resource "aws_iam_role_policy_attachment" "resource_policy" {
   policy_arn = "arn:aws:iam::aws:policy/resource_policy"
   role       = aws_iam_role.resourse_role.name
   depends_on = [
-    aws_iam_role.resourse_role.id
+    aws_iam_role.resourse_role
   ]
 }
