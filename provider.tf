@@ -9,7 +9,7 @@ terraform {
   required_version = ">= 0.14.9"
 
   cloud {
-    organization = "lukkas-lukkas"
+    organization = "your-organization"
 
     workspaces {
       name = "projectX"
