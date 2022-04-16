@@ -1,6 +1,6 @@
 variable "project_name" {
   type        = string
-  default     = "projectX"
+  default     = "main_project_name"
   description = "Project name"
 }
 

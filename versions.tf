@@ -29,10 +29,10 @@ terraform {
   required_version = ">= 0.14"
 
   cloud {
-    organization = "lukkas-lukkas"
+    organization = "your-terraform-cloud-organization"
 
     workspaces {
-      name = "projectX"
+      name = "terraform-workspace-name"
     }
   }
 }
